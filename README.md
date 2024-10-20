@@ -12,3 +12,9 @@ Where if you take the limit of the equation as N approaches infinity:
 $$\displaystyle \lim_{N \to \infty} (f)$$
 
 You get the answer to the initial question, and experimental confirmation of our initial statement that the expression approaches W/L.
+
+# File descriptions
+## SimulationCoinFlip.js
+This program runs individual simulations of the question using random chance to determine coin flip results. It runs each simulation 10 coin flips at a time, (which can be modified in code to run more slowly/quickly) and graphs the amount of money at each point in the simulation over time. The graph scales according to how many iterations have occured and the current $ value, so it can look quite chaotic at times.
+## coinFlipJS.js, coinFlipRust.rs
+These are javascript and rust versions of the exact same program. These programs iteratively, deterministically calculate the solution to the set of summations outlined above. These are not incredibly optimized programs, so they will take a bit of time when making the 5 billion comparisons required to solve this problem. Not sure why, but the javascript program is much faster than the rust one- usually around 17 seconds v.s. ~80 seconds.
