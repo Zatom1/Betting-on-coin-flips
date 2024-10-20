@@ -10,3 +10,5 @@ $$\mathrm{f} =  \sum_{k=0}^{N} (\frac{\sum_{a=0}^{k+1} S+a(W+L)-kL < 0}{\sum_{b=
 Where if you take the limit of the equation as N approaches infinity:
 
 $$\displaystyle \lim_{N \to \infty} (f)$$
+
+You get the answer to the initial question, and experimental confirmation of our initial statement that the expression approaches W/L.
