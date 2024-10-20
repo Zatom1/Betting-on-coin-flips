@@ -3,5 +3,10 @@ A simple rust program that empirically tests a question proposed by one of my fr
 
 The answer is, as long as N>>S/L, S>0, and you never land your coin on the edge, the ratio of losses over wins approaches W/L. 
 
-$$\mathrm{Losses/Wins} =  \sum_{k=0}^{N} (\frac{\sum_{a=0}^{k+1} S+a(W+L)-kL < 0}{\sum_{b=0}^{k+1} S+b(W+L)-kL > 0})$$
+The numerical answer here follows the equation: 
 
+$$\mathrm{f} =  \sum_{k=0}^{N} (\frac{\sum_{a=0}^{k+1} S+a(W+L)-kL < 0}{\sum_{b=0}^{k+1} S+b(W+L)-kL > 0})$$
+
+Where if you take the limit of the equation as N approaches infinity:
+
+$$\displaystyle \lim_{N \to \infty} (f)$$
